@@ -9,8 +9,7 @@ export ZONE=
 export API_KEY=
 ```
 ```
-gcloud compute ssh lab-vm --zone=$ZONE --quiet --command
-"cat > analyze-request.json <<EOF_END
+cat > analyze-request.json <<EOF_END
 {
   "document":{
     "type":"PLAIN_TEXT",
@@ -37,7 +36,7 @@ EOF_END
 curl -s -H "Content-Type: application/json" \
 -H "Authorization: Bearer $(gcloud auth print-access-token)" \
 "https://language.googleapis.com/v1/documents:analyzeEntities" \
--d @multi-nl-request.json > multi-response.txt"
+-d @multi-nl-request.json > multi-response.txt
 ```
 
 # Congratulations ..!!🎉  You completed the lab shortly..😃💯
