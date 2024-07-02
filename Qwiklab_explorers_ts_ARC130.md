@@ -9,6 +9,7 @@ export ZONE=
 export API_KEY=
 ```
 ```
+gcloud compute ssh lab-vm --zone=$ZONE --quiet --command
 cat > analyze-request.json <<EOF_END
 {
   "document":{
