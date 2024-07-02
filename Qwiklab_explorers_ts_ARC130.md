@@ -6,8 +6,6 @@
 
 ```
 export ZONE=
-```
-```
 export API_KEY=
 ```
 ```
